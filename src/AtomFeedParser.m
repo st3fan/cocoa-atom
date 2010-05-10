@@ -46,6 +46,9 @@
 
 			[digester addRule: [XMLDigesterCallMethodWithElementBodyRule callMethodWithElementBodyRuleWithSelector: @selector(setIdentifier:)]
 				forPattern: @"feed/entry/id"];
+				
+			[digester addRule: [XMLDigesterCallMethodWithAttributeRule callMethodWithAttributeRuleWithSelector: @selector(setLink:) attribute: @"href"]
+				forPattern: @"feed/entry/link"];
 
 			[digester addRule: [XMLDigesterCallMethodWithElementBodyRule callMethodWithElementBodyRuleWithSelector: @selector(setSummary:)]
 				forPattern: @"feed/entry/summary"];

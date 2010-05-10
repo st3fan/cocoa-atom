@@ -8,6 +8,7 @@
 @synthesize title = title_;
 @synthesize summary = summary_;
 @synthesize identifier = identifier_;
+@synthesize link = link_;
 @synthesize published = published_;
 @synthesize updated = updated_;
 @synthesize content = content_;
@@ -17,6 +18,7 @@
 	[title_ release];
 	[summary_ release];
 	[identifier_ release];
+	[link_ release];
 	[published_ release];
 	[updated_ release];
 	[content_ release];

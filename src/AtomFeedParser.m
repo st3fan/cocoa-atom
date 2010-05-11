@@ -5,6 +5,7 @@
 #import "AtomFeed.h"
 #import "AtomEntry.h"
 #import "AtomContent.h"
+#import "AtomLink.h"
 
 #import "AtomFeedParser.h"
 
@@ -46,9 +47,6 @@
 
 			[digester addRule: [XMLDigesterCallMethodWithElementBodyRule callMethodWithElementBodyRuleWithSelector: @selector(setIdentifier:)]
 				forPattern: @"feed/entry/id"];
-				
-			[digester addRule: [XMLDigesterCallMethodWithAttributeRule callMethodWithAttributeRuleWithSelector: @selector(setLink:) attribute: @"href"]
-				forPattern: @"feed/entry/link"];
 
 			[digester addRule: [XMLDigesterCallMethodWithElementBodyRule callMethodWithElementBodyRuleWithSelector: @selector(setSummary:)]
 				forPattern: @"feed/entry/summary"];
@@ -64,6 +62,24 @@
 			[digester addRule:
 				[XMLDigesterObjectCreateRule objectCreateRuleWithClass: [AtomContent class]]
 					forPattern: @"feed/entry/content"];
+					
+
+
+			[digester addRule:
+				[XMLDigesterObjectCreateRule objectCreateRuleWithClass: [AtomLink class]]
+					forPattern: @"feed/entry/link"];
+
+			NSDictionary* linkMappings = [NSDictionary dictionaryWithObjectsAndKeys:
+				@"href", @"href", @"rel", @"rel", @"length", @"length", @"hreflang", @"lang", @"title", @"title", nil];
+					
+			[digester addRule:
+				[XMLDigesterSetPropertiesRule setPropertiesRuleWithMappings: linkMappings]
+					forPattern: @"feed/entry/link"];
+					
+			[digester addRule:
+				[XMLDigesterAddObjectRule addObjectRuleWithProperty: @"links"]
+					forPattern: @"feed/entry/link"];
+					
 					
 			[digester addRule:
 				[XMLDigesterSetPropertiesRule setPropertiesRuleWithMappings: [NSDictionary dictionaryWithObject: @"type" forKey: @"type"]]

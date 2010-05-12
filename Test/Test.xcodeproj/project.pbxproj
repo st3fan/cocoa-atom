@@ -1,0 +1,364 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* TestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* TestAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
+		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
+		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
+		28F335F11007B36200424DE2 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F335F01007B36200424DE2 /* RootViewController.xib */; };
+		F84974601198A05400262E79 /* AtomContent.m in Sources */ = {isa = PBXBuildFile; fileRef = F849745C1198A05400262E79 /* AtomContent.m */; };
+		F84974611198A05400262E79 /* AtomEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = F849745D1198A05400262E79 /* AtomEntry.m */; };
+		F84974621198A05400262E79 /* AtomFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = F849745E1198A05400262E79 /* AtomFeed.m */; };
+		F84974631198A05400262E79 /* AtomFeedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F849745F1198A05400262E79 /* AtomFeedParser.m */; };
+		F84974891198A27500262E79 /* XMLDigester.m in Sources */ = {isa = PBXBuildFile; fileRef = F84974721198A27500262E79 /* XMLDigester.m */; };
+		F849748A1198A27500262E79 /* XMLDigesterAddObjectRule.m in Sources */ = {isa = PBXBuildFile; fileRef = F84974741198A27500262E79 /* XMLDigesterAddObjectRule.m */; };
+		F849748B1198A27500262E79 /* XMLDigesterCallMethodRule.m in Sources */ = {isa = PBXBuildFile; fileRef = F84974761198A27500262E79 /* XMLDigesterCallMethodRule.m */; };
+		F849748C1198A27500262E79 /* XMLDigesterCallMethodWithAttributeRule.m in Sources */ = {isa = PBXBuildFile; fileRef = F84974781198A27500262E79 /* XMLDigesterCallMethodWithAttributeRule.m */; };
+		F849748D1198A27500262E79 /* XMLDigesterCallMethodWithElementBodyRule.m in Sources */ = {isa = PBXBuildFile; fileRef = F849747A1198A27500262E79 /* XMLDigesterCallMethodWithElementBodyRule.m */; };
+		F849748E1198A27500262E79 /* XMLDigesterCallParamRule.m in Sources */ = {isa = PBXBuildFile; fileRef = F849747C1198A27500262E79 /* XMLDigesterCallParamRule.m */; };
+		F849748F1198A27500262E79 /* XMLDigesterObjectCreateRule.m in Sources */ = {isa = PBXBuildFile; fileRef = F849747E1198A27500262E79 /* XMLDigesterObjectCreateRule.m */; };
+		F84974901198A27500262E79 /* XMLDigesterPushBodyRule.m in Sources */ = {isa = PBXBuildFile; fileRef = F84974801198A27500262E79 /* XMLDigesterPushBodyRule.m */; };
+		F84974911198A27500262E79 /* XMLDigesterRule.m in Sources */ = {isa = PBXBuildFile; fileRef = F84974821198A27500262E79 /* XMLDigesterRule.m */; };
+		F84974921198A27500262E79 /* XMLDigesterSetNextRule.m in Sources */ = {isa = PBXBuildFile; fileRef = F84974841198A27500262E79 /* XMLDigesterSetNextRule.m */; };
+		F84974931198A27500262E79 /* XMLDigesterSetPropertiesRule.m in Sources */ = {isa = PBXBuildFile; fileRef = F84974861198A27500262E79 /* XMLDigesterSetPropertiesRule.m */; };
+		F84974941198A27500262E79 /* XMLDigesterSetPropertyRule.m in Sources */ = {isa = PBXBuildFile; fileRef = F84974881198A27500262E79 /* XMLDigesterSetPropertyRule.m */; };
+		F84974AE1198A60500262E79 /* LinksTest.xml in Resources */ = {isa = PBXBuildFile; fileRef = F84974AD1198A60500262E79 /* LinksTest.xml */; };
+		F849753E1199FEB600262E79 /* AtomLink.m in Sources */ = {isa = PBXBuildFile; fileRef = F849753D1199FEB600262E79 /* AtomLink.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* TestAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* TestAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28A0AAE50D9B0CCF005BE974 /* Test_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test_Prefix.pch; sourceTree = "<group>"; };
+		28AD735F0D9D9599002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28C286DF0D94DF7D0034E888 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		28C286E00D94DF7D0034E888 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		28F335F01007B36200424DE2 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Test-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Test-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		F849745C1198A05400262E79 /* AtomContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AtomContent.m; path = ../src/AtomContent.m; sourceTree = SOURCE_ROOT; };
+		F849745D1198A05400262E79 /* AtomEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AtomEntry.m; path = ../src/AtomEntry.m; sourceTree = SOURCE_ROOT; };
+		F849745E1198A05400262E79 /* AtomFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AtomFeed.m; path = ../src/AtomFeed.m; sourceTree = SOURCE_ROOT; };
+		F849745F1198A05400262E79 /* AtomFeedParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AtomFeedParser.m; path = ../src/AtomFeedParser.m; sourceTree = SOURCE_ROOT; };
+		F84974711198A27500262E79 /* XMLDigester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLDigester.h; path = "../../cocoa-xml/src/XMLDigester.h"; sourceTree = SOURCE_ROOT; };
+		F84974721198A27500262E79 /* XMLDigester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLDigester.m; path = "../../cocoa-xml/src/XMLDigester.m"; sourceTree = SOURCE_ROOT; };
+		F84974731198A27500262E79 /* XMLDigesterAddObjectRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLDigesterAddObjectRule.h; path = "../../cocoa-xml/src/XMLDigesterAddObjectRule.h"; sourceTree = SOURCE_ROOT; };
+		F84974741198A27500262E79 /* XMLDigesterAddObjectRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLDigesterAddObjectRule.m; path = "../../cocoa-xml/src/XMLDigesterAddObjectRule.m"; sourceTree = SOURCE_ROOT; };
+		F84974751198A27500262E79 /* XMLDigesterCallMethodRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLDigesterCallMethodRule.h; path = "../../cocoa-xml/src/XMLDigesterCallMethodRule.h"; sourceTree = SOURCE_ROOT; };
+		F84974761198A27500262E79 /* XMLDigesterCallMethodRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLDigesterCallMethodRule.m; path = "../../cocoa-xml/src/XMLDigesterCallMethodRule.m"; sourceTree = SOURCE_ROOT; };
+		F84974771198A27500262E79 /* XMLDigesterCallMethodWithAttributeRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLDigesterCallMethodWithAttributeRule.h; path = "../../cocoa-xml/src/XMLDigesterCallMethodWithAttributeRule.h"; sourceTree = SOURCE_ROOT; };
+		F84974781198A27500262E79 /* XMLDigesterCallMethodWithAttributeRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLDigesterCallMethodWithAttributeRule.m; path = "../../cocoa-xml/src/XMLDigesterCallMethodWithAttributeRule.m"; sourceTree = SOURCE_ROOT; };
+		F84974791198A27500262E79 /* XMLDigesterCallMethodWithElementBodyRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLDigesterCallMethodWithElementBodyRule.h; path = "../../cocoa-xml/src/XMLDigesterCallMethodWithElementBodyRule.h"; sourceTree = SOURCE_ROOT; };
+		F849747A1198A27500262E79 /* XMLDigesterCallMethodWithElementBodyRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLDigesterCallMethodWithElementBodyRule.m; path = "../../cocoa-xml/src/XMLDigesterCallMethodWithElementBodyRule.m"; sourceTree = SOURCE_ROOT; };
+		F849747B1198A27500262E79 /* XMLDigesterCallParamRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLDigesterCallParamRule.h; path = "../../cocoa-xml/src/XMLDigesterCallParamRule.h"; sourceTree = SOURCE_ROOT; };
+		F849747C1198A27500262E79 /* XMLDigesterCallParamRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLDigesterCallParamRule.m; path = "../../cocoa-xml/src/XMLDigesterCallParamRule.m"; sourceTree = SOURCE_ROOT; };
+		F849747D1198A27500262E79 /* XMLDigesterObjectCreateRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLDigesterObjectCreateRule.h; path = "../../cocoa-xml/src/XMLDigesterObjectCreateRule.h"; sourceTree = SOURCE_ROOT; };
+		F849747E1198A27500262E79 /* XMLDigesterObjectCreateRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLDigesterObjectCreateRule.m; path = "../../cocoa-xml/src/XMLDigesterObjectCreateRule.m"; sourceTree = SOURCE_ROOT; };
+		F849747F1198A27500262E79 /* XMLDigesterPushBodyRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLDigesterPushBodyRule.h; path = "../../cocoa-xml/src/XMLDigesterPushBodyRule.h"; sourceTree = SOURCE_ROOT; };
+		F84974801198A27500262E79 /* XMLDigesterPushBodyRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLDigesterPushBodyRule.m; path = "../../cocoa-xml/src/XMLDigesterPushBodyRule.m"; sourceTree = SOURCE_ROOT; };
+		F84974811198A27500262E79 /* XMLDigesterRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLDigesterRule.h; path = "../../cocoa-xml/src/XMLDigesterRule.h"; sourceTree = SOURCE_ROOT; };
+		F84974821198A27500262E79 /* XMLDigesterRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLDigesterRule.m; path = "../../cocoa-xml/src/XMLDigesterRule.m"; sourceTree = SOURCE_ROOT; };
+		F84974831198A27500262E79 /* XMLDigesterSetNextRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLDigesterSetNextRule.h; path = "../../cocoa-xml/src/XMLDigesterSetNextRule.h"; sourceTree = SOURCE_ROOT; };
+		F84974841198A27500262E79 /* XMLDigesterSetNextRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLDigesterSetNextRule.m; path = "../../cocoa-xml/src/XMLDigesterSetNextRule.m"; sourceTree = SOURCE_ROOT; };
+		F84974851198A27500262E79 /* XMLDigesterSetPropertiesRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLDigesterSetPropertiesRule.h; path = "../../cocoa-xml/src/XMLDigesterSetPropertiesRule.h"; sourceTree = SOURCE_ROOT; };
+		F84974861198A27500262E79 /* XMLDigesterSetPropertiesRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLDigesterSetPropertiesRule.m; path = "../../cocoa-xml/src/XMLDigesterSetPropertiesRule.m"; sourceTree = SOURCE_ROOT; };
+		F84974871198A27500262E79 /* XMLDigesterSetPropertyRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLDigesterSetPropertyRule.h; path = "../../cocoa-xml/src/XMLDigesterSetPropertyRule.h"; sourceTree = SOURCE_ROOT; };
+		F84974881198A27500262E79 /* XMLDigesterSetPropertyRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLDigesterSetPropertyRule.m; path = "../../cocoa-xml/src/XMLDigesterSetPropertyRule.m"; sourceTree = SOURCE_ROOT; };
+		F84974A51198A52B00262E79 /* AtomContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AtomContent.h; path = ../src/AtomContent.h; sourceTree = SOURCE_ROOT; };
+		F84974A61198A52B00262E79 /* AtomEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AtomEntry.h; path = ../src/AtomEntry.h; sourceTree = SOURCE_ROOT; };
+		F84974A71198A52B00262E79 /* AtomFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AtomFeed.h; path = ../src/AtomFeed.h; sourceTree = SOURCE_ROOT; };
+		F84974A81198A52B00262E79 /* AtomFeedParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AtomFeedParser.h; path = ../src/AtomFeedParser.h; sourceTree = SOURCE_ROOT; };
+		F84974AD1198A60500262E79 /* LinksTest.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = LinksTest.xml; sourceTree = SOURCE_ROOT; };
+		F849753C1199FEB600262E79 /* AtomLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AtomLink.h; path = ../src/AtomLink.h; sourceTree = SOURCE_ROOT; };
+		F849753D1199FEB600262E79 /* AtomLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AtomLink.m; path = ../src/AtomLink.m; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F84974711198A27500262E79 /* XMLDigester.h */,
+				F84974721198A27500262E79 /* XMLDigester.m */,
+				F84974731198A27500262E79 /* XMLDigesterAddObjectRule.h */,
+				F84974741198A27500262E79 /* XMLDigesterAddObjectRule.m */,
+				F84974751198A27500262E79 /* XMLDigesterCallMethodRule.h */,
+				F84974761198A27500262E79 /* XMLDigesterCallMethodRule.m */,
+				F84974771198A27500262E79 /* XMLDigesterCallMethodWithAttributeRule.h */,
+				F84974781198A27500262E79 /* XMLDigesterCallMethodWithAttributeRule.m */,
+				F84974791198A27500262E79 /* XMLDigesterCallMethodWithElementBodyRule.h */,
+				F849747A1198A27500262E79 /* XMLDigesterCallMethodWithElementBodyRule.m */,
+				F849747B1198A27500262E79 /* XMLDigesterCallParamRule.h */,
+				F849747C1198A27500262E79 /* XMLDigesterCallParamRule.m */,
+				F849747D1198A27500262E79 /* XMLDigesterObjectCreateRule.h */,
+				F849747E1198A27500262E79 /* XMLDigesterObjectCreateRule.m */,
+				F849747F1198A27500262E79 /* XMLDigesterPushBodyRule.h */,
+				F84974801198A27500262E79 /* XMLDigesterPushBodyRule.m */,
+				F84974811198A27500262E79 /* XMLDigesterRule.h */,
+				F84974821198A27500262E79 /* XMLDigesterRule.m */,
+				F84974831198A27500262E79 /* XMLDigesterSetNextRule.h */,
+				F84974841198A27500262E79 /* XMLDigesterSetNextRule.m */,
+				F84974851198A27500262E79 /* XMLDigesterSetPropertiesRule.h */,
+				F84974861198A27500262E79 /* XMLDigesterSetPropertiesRule.m */,
+				F84974871198A27500262E79 /* XMLDigesterSetPropertyRule.h */,
+				F84974881198A27500262E79 /* XMLDigesterSetPropertyRule.m */,
+				F84974A51198A52B00262E79 /* AtomContent.h */,
+				F84974A61198A52B00262E79 /* AtomEntry.h */,
+				F84974A71198A52B00262E79 /* AtomFeed.h */,
+				F84974A81198A52B00262E79 /* AtomFeedParser.h */,
+				F849745C1198A05400262E79 /* AtomContent.m */,
+				F849745D1198A05400262E79 /* AtomEntry.m */,
+				F849745E1198A05400262E79 /* AtomFeed.m */,
+				F849745F1198A05400262E79 /* AtomFeedParser.m */,
+				28C286DF0D94DF7D0034E888 /* RootViewController.h */,
+				28C286E00D94DF7D0034E888 /* RootViewController.m */,
+				1D3623240D0F684500981E51 /* TestAppDelegate.h */,
+				1D3623250D0F684500981E51 /* TestAppDelegate.m */,
+				F849753C1199FEB600262E79 /* AtomLink.h */,
+				F849753D1199FEB600262E79 /* AtomLink.m */,
+				F84974AD1198A60500262E79 /* LinksTest.xml */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* Test.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				28A0AAE50D9B0CCF005BE974 /* Test_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				28F335F01007B36200424DE2 /* RootViewController.xib */,
+				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* Test-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Test" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Test;
+			productName = Test;
+			productReference = 1D6058910D05DD3D006BFB54 /* Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Test" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
+				28F335F11007B36200424DE2 /* RootViewController.xib in Resources */,
+				F84974AE1198A60500262E79 /* LinksTest.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* TestAppDelegate.m in Sources */,
+				28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */,
+				F84974601198A05400262E79 /* AtomContent.m in Sources */,
+				F84974611198A05400262E79 /* AtomEntry.m in Sources */,
+				F84974621198A05400262E79 /* AtomFeed.m in Sources */,
+				F84974631198A05400262E79 /* AtomFeedParser.m in Sources */,
+				F84974891198A27500262E79 /* XMLDigester.m in Sources */,
+				F849748A1198A27500262E79 /* XMLDigesterAddObjectRule.m in Sources */,
+				F849748B1198A27500262E79 /* XMLDigesterCallMethodRule.m in Sources */,
+				F849748C1198A27500262E79 /* XMLDigesterCallMethodWithAttributeRule.m in Sources */,
+				F849748D1198A27500262E79 /* XMLDigesterCallMethodWithElementBodyRule.m in Sources */,
+				F849748E1198A27500262E79 /* XMLDigesterCallParamRule.m in Sources */,
+				F849748F1198A27500262E79 /* XMLDigesterObjectCreateRule.m in Sources */,
+				F84974901198A27500262E79 /* XMLDigesterPushBodyRule.m in Sources */,
+				F84974911198A27500262E79 /* XMLDigesterRule.m in Sources */,
+				F84974921198A27500262E79 /* XMLDigesterSetNextRule.m in Sources */,
+				F84974931198A27500262E79 /* XMLDigesterSetPropertiesRule.m in Sources */,
+				F84974941198A27500262E79 /* XMLDigesterSetPropertyRule.m in Sources */,
+				F849753E1199FEB600262E79 /* AtomLink.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Test_Prefix.pch;
+				INFOPLIST_FILE = "Test-Info.plist";
+				PRODUCT_NAME = Test;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Test_Prefix.pch;
+				INFOPLIST_FILE = "Test-Info.plist";
+				PRODUCT_NAME = Test;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.1.3;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.1.3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

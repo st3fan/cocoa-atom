@@ -4,6 +4,8 @@
 #import "AtomLink.h"
 #import "AtomContent.h"
 
+static NSMutableArray* gDateFormatters = nil;
+
 @implementation AtomEntry
 
 @synthesize title = title_;
@@ -13,6 +15,28 @@
 @synthesize published = published_;
 @synthesize updated = updated_;
 @synthesize content = content_;
+
++ (void) initialize
+{
+	if (gDateFormatters == nil)
+	{
+		gDateFormatters = [NSMutableArray new];
+
+		// 2009-11-03T23:11:51Z
+		NSDateFormatter* dateFormatter = [[NSDateFormatter new] autorelease];
+		if (dateFormatter != nil) {
+			[dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss'Z'"];
+			[gDateFormatters addObject: dateFormatter];
+		}
+		
+		// YouTube: 2009-11-03T23:11:51.000Z
+		dateFormatter = [[NSDateFormatter new] autorelease];
+		if (dateFormatter != nil) {
+			[dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss'.000Z'"];
+			[gDateFormatters addObject: dateFormatter];
+		}		
+	}
+}
 
 - (id) init
 {
@@ -36,16 +60,28 @@
 
 - (void) setPublishedFromString: (NSString*) string
 {
-	NSDateFormatter* dateFormatter = [[NSDateFormatter new] autorelease];
-    [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss'Z'"];
-    self.published = [dateFormatter dateFromString: string];
+	for (NSDateFormatter* dateFormatter in gDateFormatters) {
+		NSDate* date = [dateFormatter dateFromString: string];
+		if (date != nil) {
+			self.published = date;
+			return;
+		}
+	}
+	
+	NSLog(@"AtomEntry#setPublishedFromString: Failed to parse date %@", string);
 }
 
 - (void) setUpdatedFromString: (NSString*) string
 {
-	NSDateFormatter* dateFormatter = [[NSDateFormatter new] autorelease];
-    [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss'Z'"];
-    self.updated = [dateFormatter dateFromString: string];
+	for (NSDateFormatter* dateFormatter in gDateFormatters) {
+		NSDate* date = [dateFormatter dateFromString: string];
+		if (date != nil) {
+			self.updated = date;
+			return;
+		}
+	}
+	
+	NSLog(@"AtomEntry#setUpdatedFromString: Failed to parse date %@", string);
 }
 
 - (NSSet*) linksWithRelationType: (NSString*) rel
